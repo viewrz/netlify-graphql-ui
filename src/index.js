@@ -9,9 +9,7 @@ import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({
-    uri: process.env.API_ENDPOINT || '/api/graphql'
-  })
+  networkInterface: createNetworkInterface({uri: '/api/graphql'})
 });
 
 ReactDOM.render(
